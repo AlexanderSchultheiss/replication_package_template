@@ -1,5 +1,8 @@
+# TEMPLATE INFORMATION
+> This is a template for how different licensing information can be provided. This GitHub project itself is published under an Apache 2.0 license. 
+
 # LICENSE
-Copyright 2021 Alexander Schultheiß
+Copyright 2022 NAME SURNAME
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this project except in compliance with the License.
@@ -11,13 +14,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-## _libssrckdtree_ by _savarese software research_
-This repository contains a Java library for k-d-trees by _savarese software research:_ [libssrckdtree-j-1.0.2](https://www.savarese.com/software/libssrckdtree-j/).
-The library was also published under an Apache 2.0 license with a [NOTICE](local-maven-repo/com/savarese/NOTICE) file.
+## LIBRARY by COMPANY
+This repository contains a Java library by COMPANY.
+The library was also published under an Apache 2.0 license.
 
 ## Eclipse Packages
-This repository also contains [eclipse libraries](local-maven-repo/org/eclipse) that are required for converting emf models into csv files. These libraries
-fall under the [Eclipse Public License](https://www.eclipse.org/legal/epl-2.0/).
+This repository also contains eclipse libraries. These libraries fall under the [Eclipse Public License](https://www.eclipse.org/legal/epl-2.0/).
 
 ## Apache License, Version 2.0
 ```

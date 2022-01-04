@@ -1,0 +1,1 @@
+docker run --rm -v "%cd%\container-files":"/home/user/output" experiments %*
