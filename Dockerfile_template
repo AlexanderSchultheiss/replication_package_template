@@ -17,7 +17,8 @@
 # ----------------------------
 
 # COMPILE STAGE
-FROM alpine:3.14
+# TODO: Update alpine version
+FROM alpine:3.15
 
 # EXAMPLE: Prepare the compile environment. JDK is automatically installed
 RUN apk add maven
@@ -37,7 +38,7 @@ COPY pom.xml .
 RUN mvn package || exit
 
 # ENVIRONMENT PREPARATION PHASE
-FROM alpine:3.14
+FROM alpine:3.15
 
 # REQUIRED: Create a user
 RUN adduser --disabled-password  --home /home/user --gecos '' user
@@ -61,7 +62,7 @@ RUN apk add --update openjdk11 unzip
 WORKDIR /home/user
 
 # REQUIRED: Copy the docker resources
-COPY docker-resources/* ./
+COPY docker/* ./
 
 # EXAMPLE: Copy the compiled JAR file from the first stage into the second stage
 # Syntax: COPY --from=STAGE_ID SOURCE_PATH TARGET_PATH

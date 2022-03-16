@@ -1,1 +1,1 @@
-docker run --rm -v "%cd%\container-files":"/home/user/output" experiments %*
+docker run --rm -v "%cd%\docker-output":"/home/user/output" replication-package %*
